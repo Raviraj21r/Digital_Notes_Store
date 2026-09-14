@@ -5,7 +5,7 @@ export const notes = [
     description: 'Comprehensive handwritten notes covering Git and GitHub from basics to advanced concepts including branching, merging, and collaboration workflows.',
     originalPrice: 20,
     price: 5,
-    pdfUrl: 'https://example.com/git-github-notes.pdf',
+    pdfUrlEnv: 'NEXT_PUBLIC_GIT_GITHUB_PDF_URL',
     badge: 'Bestseller'
   },
   {
@@ -14,7 +14,7 @@ export const notes = [
     description: 'Complete Python programming notes covering basics, data structures, OOP, file handling, and advanced topics like decorators and generators.',
     originalPrice: 30,
     price: 10,
-    pdfUrl: 'https://example.com/python-notes.pdf',
+    pdfUrlEnv: 'NEXT_PUBLIC_PYTHON_PDF_URL',
     badge: 'Popular'
   },
   {
@@ -23,7 +23,7 @@ export const notes = [
     description: 'Essential database management notes covering normalization, ER diagrams, SQL queries, transactions, and database design principles.',
     originalPrice: 25,
     price: 8,
-    pdfUrl: 'https://example.com/dbms-notes.pdf',
+    pdfUrlEnv: 'NEXT_PUBLIC_DBMS_PDF_URL',
     badge: 'New'
   },
   {
@@ -32,7 +32,7 @@ export const notes = [
     description: 'Data Structures and Algorithms notes with detailed explanations of arrays, linked lists, trees, graphs, sorting, and searching algorithms.',
     originalPrice: 40,
     price: 15,
-    pdfUrl: 'https://example.com/dsa-notes.pdf',
+    pdfUrlEnv: 'NEXT_PUBLIC_DSA_PDF_URL',
     badge: 'Trending'
   },
   {
@@ -41,7 +41,7 @@ export const notes = [
     description: 'Complete Java programming notes with in-depth coverage of OOP concepts, exception handling, collections, streams, and multithreading.',
     originalPrice: 35,
     price: 12,
-    pdfUrl: 'https://example.com/java-notes.pdf',
+    pdfUrlEnv: 'NEXT_PUBLIC_JAVA_PDF_URL',
     badge: 'Comprehensive'
   }
 ];

@@ -30,9 +30,20 @@ export async function POST(request) {
     if (generatedSignature === razorpay_signature) {
       console.log(`Payment verified successfully for note: ${noteId}`);
       
+      // Get the actual PDF URL from environment variable
+      const downloadUrl = process.env[note.pdfUrlEnv];
+      
+      if (!downloadUrl) {
+        console.error(`PDF URL not configured for note: ${noteId}. Environment variable: ${note.pdfUrlEnv}`);
+        return NextResponse.json(
+          { error: 'PDF URL not configured. Please contact support.' },
+          { status: 500 }
+        );
+      }
+      
       return NextResponse.json({
         success: true,
-        downloadUrl: note.pdfUrl,
+        downloadUrl: downloadUrl,
         noteTitle: note.title,
       });
     } else {
